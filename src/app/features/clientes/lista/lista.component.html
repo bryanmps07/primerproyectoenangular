@@ -1,0 +1,11 @@
+<p>lista works!</p>
+<div *ngIf="!datos">
+    Cargando...
+</div>
+<div *ngIf="datos">
+    <ul *ngFor="let item of datos">
+        <li>{{item.popularity}}</li>
+        <li>{{item.original_title}}</li>
+        <li>{{item.adult ? 'Activo':'Desactivado'}}</li>
+    </ul>
+</div>
